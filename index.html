@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #city-input {
+            border: 2px solid red;
+            width: calc(100% - 24px);
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+
+        #search-button {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        #search-button:hover {
+            background-color: darkgreen;
+        }
+
+        #city-name, #city-time, #city-temp {
+            text-align: center;
+            font-size: 50px;
+            color: darkblue;
+            text-shadow: 2px 2px rgba(54, 237, 121, 0.7);
+            margin: 10px 0;
+        }
+
+        #city-time {
+            text-shadow: 2px 2px red;
+        }
+
+        #city-temp {
+            text-shadow: 2px 2px rgb(229, 199, 3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter your city" id="city-input">
+        <button id="search-button">Search</button>
+    </div>
+    <div>
+        <h3 id="city-name"></h3>
+        <h4 id="city-time"></h4>
+        <p id="city-temp"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
